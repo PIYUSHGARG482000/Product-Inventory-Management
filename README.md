@@ -48,7 +48,7 @@ The system consists of two core services:
 #### 1. Clone the repository:
 
 ```sh 
-git clone https://github.com/arman-malik9/product-management.git
+git clone https://github.com/PIYUSHGARG482000/Product-Inventory-Management
 ```
 #### 2. Configure MongoDB and Redis in the application
 - Update **.properties file.**  
