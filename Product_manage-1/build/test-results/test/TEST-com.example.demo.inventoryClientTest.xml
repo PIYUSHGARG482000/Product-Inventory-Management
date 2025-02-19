@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.inventoryClientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-19T16:04:25" hostname="PIYUSH-GARG" time="0.431">
+  <properties/>
+  <testcase name="deleteInventory()" classname="com.example.demo.inventoryClientTest" time="0.404"/>
+  <testcase name="updateInventory()" classname="com.example.demo.inventoryClientTest" time="0.007"/>
+  <testcase name="getInventoryByProductId()" classname="com.example.demo.inventoryClientTest" time="0.003"/>
+  <testcase name="getAllInventory()" classname="com.example.demo.inventoryClientTest" time="0.01"/>
+  <testcase name="addInventory()" classname="com.example.demo.inventoryClientTest" time="0.004"/>
+  <system-out><![CDATA[2025-02-19T21:34:25.083+05:30  INFO 15672 --- [Product_manage] [WebServer 51601] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] starting to accept connections
+2025-02-19T21:34:25.466+05:30  INFO 15672 --- [Product_manage] [127.0.0.1:51602] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] received request: DELETE /product/delete/1 HTTP/1.1 and responded: HTTP/1.1 200 OK
+2025-02-19T21:34:25.494+05:30  INFO 15672 --- [Product_manage] [127.0.0.1:51602] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] received request: PUT /product/update/1 HTTP/1.1 and responded: HTTP/1.1 200 OK
+2025-02-19T21:34:25.498+05:30  INFO 15672 --- [Product_manage] [127.0.0.1:51602] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] received request: GET /product/1 HTTP/1.1 and responded: HTTP/1.1 200 OK
+2025-02-19T21:34:25.507+05:30  INFO 15672 --- [Product_manage] [127.0.0.1:51602] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] received request: GET / HTTP/1.1 and responded: HTTP/1.1 200 OK
+2025-02-19T21:34:25.513+05:30  INFO 15672 --- [Product_manage] [127.0.0.1:51602] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] received request: POST /addInventory HTTP/1.1 and responded: HTTP/1.1 200 OK
+2025-02-19T21:34:25.516+05:30  INFO 15672 --- [Product_manage] [WebServer 51601] okhttp3.mockwebserver.MockWebServer      : MockWebServer[51601] done accepting connections: Socket closed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

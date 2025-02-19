@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProductServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProductServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.html">com.example.demo</a> &gt; ProductServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.217s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">90%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="updateProductTest_OnSuccess_AVAILABLE_SOON()"></a>
+<h3 class="failures">updateProductTest_OnSuccess_AVAILABLE_SOON()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: expectation &quot;expectNext(ProdInventoryDTO(product=Product(id=2, name=HP ProBook, description=HP Probook Laptop with Intel I5, price=1332.34), StockCount=-1, StockStatus=AVAILABLE_SOON))&quot; failed (expected value: ProdInventoryDTO(product=Product(id=2, name=HP ProBook, description=HP Probook Laptop with Intel I5, price=1332.34), StockCount=-1, StockStatus=AVAILABLE_SOON); actual value: ProdInventoryDTO(product=Product(id=3, name=HP IdeaPad Laptop, description=HP IdeaPad Laptop with Intel I5, price=2332.34), StockCount=-1, StockStatus=AVAILABLE_SOON))
+	at reactor.test.MessageFormatter.assertionError(MessageFormatter.java:115)
+	at reactor.test.MessageFormatter.failPrefix(MessageFormatter.java:104)
+	at reactor.test.MessageFormatter.fail(MessageFormatter.java:73)
+	at reactor.test.MessageFormatter.failOptional(MessageFormatter.java:88)
+	at reactor.test.DefaultStepVerifierBuilder.lambda$addExpectedValue$10(DefaultStepVerifierBuilder.java:512)
+	at reactor.test.DefaultStepVerifierBuilder$SignalEvent.test(DefaultStepVerifierBuilder.java:2289)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.onSignal(DefaultStepVerifierBuilder.java:1529)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.onExpectation(DefaultStepVerifierBuilder.java:1477)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultVerifySubscriber.onNext(DefaultStepVerifierBuilder.java:1146)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:245)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:305)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291)
+	at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:193)
+	at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:63)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117)
+	at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:193)
+	at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4560)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultStepVerifier.toVerifierAndSubscribe(DefaultStepVerifierBuilder.java:891)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultStepVerifier.verify(DefaultStepVerifierBuilder.java:831)
+	at reactor.test.DefaultStepVerifierBuilder$DefaultStepVerifier.verify(DefaultStepVerifierBuilder.java:823)
+	at reactor.test.DefaultStepVerifierBuilder.verifyComplete(DefaultStepVerifierBuilder.java:690)
+	at com.example.demo.ProductServiceTest.updateProductTest_OnSuccess_AVAILABLE_SOON(ProductServiceTest.java:201)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">UpdateProductTest_NotFound()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addProductTest_AVAILABLE_SOON()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addProductTest_IN_STOCK()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addProductTest_OUT_OF_STOCK()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteProductTest_NotFound()</td>
+<td class="success">0.165s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteProductTest_OnSuccess()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllProductTest()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getProductByIdTest()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">updateProductTest_OnSuccess_AVAILABLE_SOON()</td>
+<td class="failures">0.012s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">updateProductTest_OnSuccess_IN_STOCK()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateProductTest_OnSuccess_OUT_OF_STOCK()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-02-19T21:34:24.995+05:30  WARN 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Product associated with Id:1 removed from Products collection
+2025-02-19T21:34:25.012+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updated the Product Details associated with Id : 2 in a Product collection
+2025-02-19T21:34:25.015+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updating Product into Inventory throught WebClient
+2025-02-19T21:34:25.018+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updated the Product Details associated with Id : 1 in a Product collection
+2025-02-19T21:34:25.019+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updating Product into Inventory throught WebClient
+2025-02-19T21:34:25.023+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding the Product with Name:IPhone13 in a Products Collection
+2025-02-19T21:34:25.024+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding Product to Inventory throught WebClient
+2025-02-19T21:34:25.027+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding the Product with Name:HP ProBook in a Products Collection
+2025-02-19T21:34:25.028+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding Product to Inventory throught WebClient
+2025-02-19T21:34:25.032+05:30  WARN 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Product associated with Id:1 removed from Products collection
+2025-02-19T21:34:25.036+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updated the Product Details associated with Id : 1 in a Product collection
+2025-02-19T21:34:25.039+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updated the Product Details associated with Id : 3 in a Product collection
+2025-02-19T21:34:25.040+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Updating Product into Inventory throught WebClient
+2025-02-19T21:34:25.052+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Fetching Product associated with Id : 1
+2025-02-19T21:34:25.062+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding the Product with Name:HP ProBook in a Products Collection
+2025-02-19T21:34:25.062+05:30  INFO 15672 --- [Product_manage] [    Test worker] c.example.demo.services.ProductServices  : Adding Product to Inventory throught WebClient
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.12.1</a> at 19-Feb-2025, 9:34:26 pm</p>
+</div>
+</div>
+</body>
+</html>

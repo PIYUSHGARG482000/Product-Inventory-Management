@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.ProductControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-19T16:04:24" hostname="PIYUSH-GARG" time="0.392">
+  <properties/>
+  <testcase name="addProductTest()" classname="com.example.demo.ProductControllerTest" time="0.278"/>
+  <testcase name="deleteByIdTest()" classname="com.example.demo.ProductControllerTest" time="0.045"/>
+  <testcase name="getProductByIdTest()" classname="com.example.demo.ProductControllerTest" time="0.011"/>
+  <testcase name="updateProductTest()" classname="com.example.demo.ProductControllerTest" time="0.011"/>
+  <testcase name="getAllProductTest()" classname="com.example.demo.ProductControllerTest" time="0.036"/>
+  <system-out><![CDATA[21:34:21.836 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:34:21.983 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.ProductManage1Application for test class com.example.demo.ProductControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-19T21:34:23.167+05:30  INFO 15672 --- [Product_manage] [    Test worker] com.example.demo.ProductControllerTest   : Starting ProductControllerTest using Java 21.0.5 with PID 15672 (started by PIYUSH_GARG in D:\Data\Documents\Product-Inventory-Management\Product_manage-1)
+2025-02-19T21:34:23.169+05:30  INFO 15672 --- [Product_manage] [    Test worker] com.example.demo.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-02-19T21:34:23.905+05:30 TRACE 15672 --- [Product_manage] [    Test worker] o.s.c.a.AnnotationCacheOperationSource   : Adding cacheable method 'getProductById' with operations: [Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.getProductById(java.lang.String)] caches=[products] | key='#id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='#id!=null' | unless='' | sync='false']
+2025-02-19T21:34:23.919+05:30 TRACE 15672 --- [Product_manage] [    Test worker] o.s.c.a.AnnotationCacheOperationSource   : Adding cacheable method 'updateProduct' with operations: [Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.updateProduct(java.lang.String,com.example.demo.models.ProdInventoryDTO)] caches=[products] | key='#a0' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless='']
+2025-02-19T21:34:23.922+05:30 TRACE 15672 --- [Product_manage] [    Test worker] o.s.c.a.AnnotationCacheOperationSource   : Adding cacheable method 'deleteProduct' with operations: [Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.deleteProduct(java.lang.String)] caches=[product] | key='#id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='#id!=null',false,false]
+2025-02-19T21:34:24.432+05:30  INFO 15672 --- [Product_manage] [    Test worker] com.example.demo.ProductControllerTest   : Started ProductControllerTest in 1.614 seconds (process running for 3.693)
+2025-02-19T21:34:24.684+05:30  INFO 15672 --- [Product_manage] [     parallel-1] c.e.demo.controller.ProductController    : Product : Product(id=3, name=IPhone 15, description=IPhone 15 with 128GB ROM, price=13.34) added in the database.
+2025-02-19T21:34:24.745+05:30  INFO 15672 --- [Product_manage] [     parallel-2] c.e.demo.controller.ProductController    : Product associated with id : 1 removed from the database.
+2025-02-19T21:34:24.768+05:30 TRACE 15672 --- [Product_manage] [     parallel-2] o.s.cache.interceptor.CacheInterceptor   : Computed cache key '1' for operation Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.deleteProduct(java.lang.String)] caches=[product] | key='#id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='#id!=null',false,false
+2025-02-19T21:34:24.769+05:30 TRACE 15672 --- [Product_manage] [     parallel-2] o.s.cache.interceptor.CacheInterceptor   : Invalidating cache key [1] for operation Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.deleteProduct(java.lang.String)] caches=[product] | key='#id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='#id!=null',false,false on method public reactor.core.publisher.Mono com.example.demo.controller.ProductController.deleteProduct(java.lang.String)
+2025-02-19T21:34:24.779+05:30 TRACE 15672 --- [Product_manage] [     parallel-3] o.s.cache.interceptor.CacheInterceptor   : Computed cache key '1' for operation Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.getProductById(java.lang.String)] caches=[products] | key='#id' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='#id!=null' | unless='' | sync='false'
+2025-02-19T21:34:24.780+05:30 TRACE 15672 --- [Product_manage] [     parallel-3] o.s.cache.interceptor.CacheInterceptor   : No cache entry for key '1' in cache(s) [products]
+2025-02-19T21:34:24.780+05:30  INFO 15672 --- [Product_manage] [     parallel-3] c.e.demo.controller.ProductController    : Product associated with id : 1 fetched from the database.
+2025-02-19T21:34:24.782+05:30 TRACE 15672 --- [Product_manage] [     parallel-3] o.s.cache.interceptor.CacheInterceptor   : Creating cache entry for key '1' in cache(s) [products]
+2025-02-19T21:34:24.793+05:30  INFO 15672 --- [Product_manage] [     parallel-4] c.e.demo.controller.ProductController    : Product associated with id : 1 updated in database.
+2025-02-19T21:34:24.795+05:30 TRACE 15672 --- [Product_manage] [     parallel-4] o.s.cache.interceptor.CacheInterceptor   : Computed cache key '1' for operation Builder[public reactor.core.publisher.Mono com.example.demo.controller.ProductController.updateProduct(java.lang.String,com.example.demo.models.ProdInventoryDTO)] caches=[products] | key='#a0' | keyGenerator='' | cacheManager='' | cacheResolver='' | condition='' | unless=''
+2025-02-19T21:34:24.795+05:30 TRACE 15672 --- [Product_manage] [     parallel-4] o.s.cache.interceptor.CacheInterceptor   : Creating cache entry for key '1' in cache(s) [products]
+2025-02-19T21:34:24.808+05:30  INFO 15672 --- [Product_manage] [     parallel-5] c.e.demo.controller.ProductController    : All products feteched from database.
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\acer\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

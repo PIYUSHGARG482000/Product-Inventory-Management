@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.InventoryServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-19T16:34:59" hostname="PIYUSH-GARG" time="0.155">
+  <properties/>
+  <testcase name="updateInventoryStockIdNotFoundTest()" classname="com.example.demo.InventoryServiceTest" time="0.129"/>
+  <testcase name="updateInventoryTest()" classname="com.example.demo.InventoryServiceTest" time="0.003"/>
+  <testcase name="updateInventoryByProductIdTest()" classname="com.example.demo.InventoryServiceTest" time="0.003"/>
+  <testcase name="getInventoryByStockIdNotFoundTest()" classname="com.example.demo.InventoryServiceTest" time="0.002"/>
+  <testcase name="delteInventoryStockIdNotFoundTest()" classname="com.example.demo.InventoryServiceTest" time="0.002"/>
+  <testcase name="getAllInventoryTest()" classname="com.example.demo.InventoryServiceTest" time="0.002"/>
+  <testcase name="getInventoryByProductIdTest()" classname="com.example.demo.InventoryServiceTest" time="0.003"/>
+  <testcase name="deleteInventoryByProductIdTest()" classname="com.example.demo.InventoryServiceTest" time="0.002"/>
+  <testcase name="getInventoryByStockId()" classname="com.example.demo.InventoryServiceTest" time="0.001"/>
+  <testcase name="delteInventoryTest()" classname="com.example.demo.InventoryServiceTest" time="0.001"/>
+  <testcase name="addInventory()" classname="com.example.demo.InventoryServiceTest" time="0.002"/>
+  <system-out><![CDATA[2025-02-19T22:04:59.348+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Updating Inventory Details associated with StockId : 3
+2025-02-19T22:04:59.361+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Updating Inventory Details associated with StockId : 1
+2025-02-19T22:04:59.364+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Updating Inventory Details associated with ProductId : 1
+2025-02-19T22:04:59.368+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Fetching Inventory Details associated with StockId : 3
+2025-02-19T22:04:59.370+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Deleting Inventory Details associated with StockId : 3
+2025-02-19T22:04:59.371+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Fetchoing all the Inventory from collection
+2025-02-19T22:04:59.373+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Fetching Inventory Details associated with ProductId : 1
+2025-02-19T22:04:59.377+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Deleting Inventory Details associated with ProductId : 1
+2025-02-19T22:04:59.379+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Fetching Inventory Details associated with StockId : 1
+2025-02-19T22:04:59.381+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Deleting Inventory Details associated with StockId : 1
+2025-02-19T22:04:59.383+05:30  INFO 7024 --- [ProductInventory] [    Test worker] c.e.demo.services.InventoryServices      : Adding new Inventory Details in the collection with Inventory  : ProductInventory(stockId=1, stockCount=30, status=IN_STOCK, productId=1)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
